@@ -7,9 +7,9 @@
     <session-factory>
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost/module3</property>
-        <property name="connection.username">konstantinnetrebenko</property>
-        <property name="connection.password">kostyanet</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://ec2-44-196-8-220.compute-1.amazonaws.com:5432/dpbtapgi2h52h?sslmode=require</property>
+        <property name="connection.username">aezskglllycnus</property>
+        <property name="connection.password">a8206e15a6e8908ab16af98f95b7aafc872bd5492f9d73fd05febf6373a88d74</property>
 <!--        <property name="connection.username">konstantinnetrebenko</property>-->
 <!--        <property name="connection.password"></property>-->
 
