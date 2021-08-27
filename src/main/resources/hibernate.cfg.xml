@@ -7,10 +7,11 @@
     <session-factory>
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://ec2-54-228-99-58.eu-west-1.compute.amazonaws.com:5432/d8nfvphhl5elpq?sslmode=require</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://ec2-54-228-99-58.eu-west-1.compute.amazonaws.com:5432/d8nfvphhl5elpq?sslmode=require</property>
-        <property name="connection.username">segmctynxipeti</property>
-        <property name="connection.password">64b785d6f676a143c0c17706369ae95efc7d7877bb3c0864fdb1fac44e01d7db</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost/module3</property>
+        <property name="connection.username">konstantinnetrebenko</property>
+        <property name="connection.password">kostyanet</property>
+<!--        <property name="connection.username">konstantinnetrebenko</property>-->
+<!--        <property name="connection.password"></property>-->
 
         <!-- JDBC connection pool settings ... using built-in test pool -->
         <property name="connection.pool_size">1</property>
@@ -35,12 +36,15 @@
         <property name="hibernate.globally_quoted_identifiers">true</property>
         <property name="hibernate.jdbc.batch_size">20</property>
 
-<!--        <mapping class="entity.Album" />-->
-<!--        <mapping class="entity.Artist" />-->
-<!--        <mapping class="entity.Customer" />-->
-<!--        <mapping class="entity.Order" />-->
-<!--        <mapping class="entity.Track" />-->
-
+        <mapping class="entity.Call" />
+        <mapping class="entity.Device" />
+        <mapping class="entity.DeviceStatistic" />
+        <mapping class="entity.ServiceConsumer" />
+        <mapping class="entity.ServiceStatistic" />
+        <mapping class="entity.Sms" />
+        <mapping class="entity.Tariff" />
+        <mapping class="entity.Traffic" />
+        <mapping class="entity.User" />
     </session-factory>
 
 </hibernate-configuration>
